@@ -14,7 +14,7 @@ def open_close(reaper, sleep, kill_after):
     reaper.register(timeout=kill_after)
 
     # Run a long-running operation
-    print("Will sleep for %s seconds." % sleep)
+    print(("Will sleep for %s seconds." % sleep))
     time.sleep(sleep)
 
     # Unregister unless already killed by the GrimReaper
